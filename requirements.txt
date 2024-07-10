@@ -1,7 +1,6 @@
 absl-py==2.1.0
 appdirs==1.4.4
 astunparse==1.6.3
-conda-verify==3.4.2
 dm-tree==0.1.8
 docopt==0.6.2
 docstring_parser==0.16
