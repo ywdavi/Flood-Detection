@@ -3,7 +3,7 @@ appdirs==1.4.4
 astunparse==1.6.3
 audioread==3.0.1
 c2==0.1.7
-clyent==1.2.2
+clyent==1.2.1
 conda-verify==3.4.2
 dm-tree==0.1.8
 docopt==0.6.2
