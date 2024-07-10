@@ -10,9 +10,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 from collections import Counter
 
-model_path = '/Users/davidevettore/PycharmProjects/ADV/kaggle_2775'
-legend = "/Users/davidevettore/PycharmProjects/ADV/Unknown.png"
-placeholder_img = '/Users/davidevettore/PycharmProjects/ADV/6397.jpg'
+model_path = 'kaggle_2775'
+legend = "Unknown.png"
+placeholder_img = '6397.jpg'
+
 
 
 # Functions
