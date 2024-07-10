@@ -64,13 +64,6 @@ streamlit-drawable-canvas==0.9.3
 streamlit-image-annotation==0.4.0
 streamlit-image-comparison==0.0.4
 style==1.1.0
-tensorboard==2.16.2
-tensorboard-data-server==0.7.2
-tensorflow==2.16.1
-tensorflow-datasets==4.9.5
-tensorflow-macos==2.16.1
-tensorflow-metadata==1.15.0
-tensorflow-metal==1.1.0
 termcolor==2.4.0
 timm==0.9.2
 torch==2.3.0
