@@ -10,10 +10,11 @@
 The **FloodNet Dataset** provides high-resolution UAS imagery with detailed semantic annotations of damages collected after **Hurricane Harvey**. The whole dataset has 2343 images, divided into training (60%), validation (20%), and test (20%) sets. The semantic segmentation labels include: Background, Building Flooded, Building Non-Flooded, Road Flooded, Road Non-Flooded, Water, Tree, Vehicle, Pool and Grass. The **goal** is to create and train a strong model for semantic segmentation. This model will be used in a dashboard to detect flood damages in real-time.
 
 **_Content:_**
-- [6397.jpg](https://github.com/ywdavi/FloodDetection/blob/main/6397.jpg) and [7606.jpg](https://github.com/ywdavi/FloodDetection/blob/main/7606.jpg): placeholder images. 
-- [FPN](https://github.com/ywdavi/FloodDetection/blob/main/FPN) and [Unet](https://github.com/ywdavi/FloodDetection/blob/main/Unet): segmentation models (`.pth`).
-- [FloodDetection.py](https://github.com/ywdavi/FloodDetection/blob/main/FloodDetection.py): streamlit dashboard.
-- [requirements.txt](https://github.com/ywdavi/FloodDetection/blob/main/requirements.txt): required libraries.
+- [6397.jpg](https://github.com/ywdavi/FloodDetection/blob/main/6397.jpg) and [7606.jpg](https://github.com/ywdavi/FloodDetection/blob/main/7606.jpg): Placeholder images. 
+- [FPN](https://github.com/ywdavi/FloodDetection/blob/main/FPN) and [Unet](https://github.com/ywdavi/FloodDetection/blob/main/Unet): Segmentation models (`.pth`).
+- [FloodDetection.py](https://github.com/ywdavi/FloodDetection/blob/main/FloodDetection.py): Streamlit dashboard.
+- [requirements.txt](https://github.com/ywdavi/FloodDetection/blob/main/requirements.txt): Required libraries for the dashboard.
+- [FloodDetection_Davide_Vettore.ipynb](https://github.com/ywdavi/FloodDetection/blob/main/FloodDetection_Davide_Vettore.ipynb): Training of the segmentation models.
 
 **_References:_**
 - [FloodNet Dataset Repository](https://github.com/BinaLab/FloodNet-Supervised_v1.0)
