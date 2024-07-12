@@ -12,7 +12,3 @@ The **FloodNet Dataset** provides high-resolution UAS imagery with detailed sema
 **_References:_**
 - [FloodNet Dataset Repository](https://github.com/BinaLab/FloodNet-Supervised_v1.0)
 - [FloodNet Paper](https://ieeexplore.ieee.org/document/9460988)
-
-**_Dashboard:_**
-- [Dashboard Repository](https://github.com/ywdavi/FloodDetection/tree/main)
-- [Streamlit App](https://flooddetection.streamlit.app/)
