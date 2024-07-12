@@ -9,6 +9,10 @@
 
 The **FloodNet Dataset** provides high-resolution UAS imagery with detailed semantic annotations of damages collected after **Hurricane Harvey**. The whole dataset has 2343 images, divided into training (60%), validation (20%), and test (20%) sets. The semantic segmentation labels include: Background, Building Flooded, Building Non-Flooded, Road Flooded, Road Non-Flooded, Water, Tree, Vehicle, Pool and Grass. The **goal** is to create and train a strong model for semantic segmentation. This model will be used in a dashboard to detect flood damages in real-time.
 
+_Content:_
+- [6397.jpg](https://github.com/ywdavi/FloodDetection/blob/main/6397.jpg) and [7606.jpg](https://github.com/ywdavi/FloodDetection/blob/main/7606.jpg): placeholder images. 
+- 
+
 **_References:_**
 - [FloodNet Dataset Repository](https://github.com/BinaLab/FloodNet-Supervised_v1.0)
 - [FloodNet Paper](https://ieeexplore.ieee.org/document/9460988)
