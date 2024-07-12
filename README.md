@@ -11,7 +11,7 @@ The **FloodNet Dataset** provides high-resolution UAS imagery with detailed sema
 
 **_Content:_**
 - [6397.jpg](https://github.com/ywdavi/FloodDetection/blob/main/6397.jpg) and [7606.jpg](https://github.com/ywdavi/FloodDetection/blob/main/7606.jpg): placeholder images. 
-- [FPN](https://github.com/ywdavi/FloodDetection/blob/main/FPN) and [Unet](https://github.com/ywdavi/FloodDetection/blob/main/7606.Unet): segmentation models (`.pth`).
+- [FPN](https://github.com/ywdavi/FloodDetection/blob/main/FPN) and [Unet](https://github.com/ywdavi/FloodDetection/blob/main/Unet): segmentation models (`.pth`).
 - [FloodDetection.py](https://github.com/ywdavi/FloodDetection/blob/main/FloodDetection.py): streamlit dashboard.
 - [requirements.txt](https://github.com/ywdavi/FloodDetection/blob/main/requirements.txt): required libraries.
 
