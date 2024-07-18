@@ -11,8 +11,6 @@ from collections import Counter
 
 model_path = 'Unet'
 model_path1 = 'FPN'
-model_path2 = 'PSP'
-model_path3 = 'Unet++'
 legend = "Legend.png"
 placeholder_img = '6397.jpg'
 
@@ -30,7 +28,7 @@ def load_model(smodel):
 
     if smodel == "Unet":
         model = smp.Unet(
-            encoder_name="resnet101",
+            encoder_name="resnet34",
             encoder_weights="imagenet",
             in_channels=3,
             classes=len(classes)
@@ -38,7 +36,7 @@ def load_model(smodel):
         state_dict = torch.load(model_path, map_location=torch.device('cpu'))
         model.load_state_dict(state_dict)
 
-    elif smodel == "FPN":
+    else:
         model = smp.FPN(
             encoder_name="resnet34",
             encoder_weights="imagenet",
@@ -47,25 +45,7 @@ def load_model(smodel):
         )
         state_dict = torch.load(model_path1, map_location=torch.device('cpu'))
         model.load_state_dict(state_dict)
-
-    elif smodel == "PSP":
-         model = smp.PSPNet(encoder_name='resnet101',
-            encoder_weights='imagenet',
-            in_channels=3,
-            classes=len(classes)
-         )
-         state_dict = torch.load(model_path2, map_location=torch.device('cpu'))
-         model.load_state_dict(state_dict)
-
-    else:
-        model = smp.UnetPlusPlus(encoder_name="resnet101",
-            encoder_weights="imagenet",
-            in_channels=3,
-            classes=len(classes)
-        )
-        state_dict = torch.load(model_path3, map_location=torch.device('cpu'))
-        model.load_state_dict(state_dict)
-
+        
     return model
 
 def preprocess_image(image):
@@ -191,7 +171,7 @@ st.sidebar.divider()
 st.sidebar.write("## Choose Segmentation Model")
 smodel = st.sidebar.selectbox(
     "Segmentation model:",
-    ("Unet", "FPN","PSP","Unet++"), )
+    ("Unet", "FPN"), )
 st.sidebar.divider()
 
 st.sidebar.write("## Choose segments of interest")
