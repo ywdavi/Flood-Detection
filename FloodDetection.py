@@ -27,25 +27,25 @@ def load_dummy_model():               # Alternative when the model is missing
 def load_model(smodel):
 
     if smodel == "Unet":
-
         model = smp.Unet(
             encoder_name="resnet34",
             encoder_weights="imagenet",
             in_channels=3,
-            classes=10
+            classes=len(classes)
         )
         state_dict = torch.load(model_path, map_location=torch.device('cpu'))
         model.load_state_dict(state_dict)
+
     else:
         model = smp.FPN(
             encoder_name="resnet34",
             encoder_weights="imagenet",
             in_channels=3,
-            classes=10
+            classes=len(classes)
         )
         state_dict = torch.load(model_path1, map_location=torch.device('cpu'))
         model.load_state_dict(state_dict)
-
+        
     return model
 
 def preprocess_image(image):
@@ -248,7 +248,7 @@ df = class_counter(segmented_image, classes_palette)
 flooded_building_percentage = percentages(df, 'Building Flooded', 'Building Non-Flooded')
 flooded_road_percentage = percentages(df, 'Road Flooded', 'Road Non-Flooded')
 result_container = st.container()
-if flooded_building_percentage > 2 or flooded_road_percentage > 2:
+if flooded_building_percentage > 20 or flooded_road_percentage > 20:
     container_response("rgba(255, 0, 0, 0.6)",
                        f"The automatically analyzed aerial image shows that {flooded_building_percentage:.2f}% of buildings and "
                         f"{flooded_road_percentage:.2f}% of roads are flooded. Quick action is needed to help these areas!")

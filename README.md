@@ -11,10 +11,10 @@ The **FloodNet Dataset** provides high-resolution UAS imagery with detailed sema
 
 **_Content:_**
 - [6397.jpg](https://github.com/ywdavi/FloodDetection/blob/main/6397.jpg) and [7606.jpg](https://github.com/ywdavi/FloodDetection/blob/main/7606.jpg): Placeholder images. 
-- [FPN](https://github.com/ywdavi/FloodDetection/blob/main/FPN) and [Unet](https://github.com/ywdavi/FloodDetection/blob/main/Unet): Segmentation models (`.pth` files).
+- [FPN](https://github.com/ywdavi/FloodDetection/blob/main/FPN) and [Unet](https://github.com/ywdavi/FloodDetection/blob/main/Unet): Segmentation models (`.pth`).
 - [FloodDetection.py](https://github.com/ywdavi/FloodDetection/blob/main/FloodDetection.py): Streamlit dashboard.
-- [requirements.txt](https://github.com/ywdavi/FloodDetection/blob/main/requirements.txt): Necessary libraries for the dashboard.
-- [FloodDetection_Davide_Vettore.ipynb](https://github.com/ywdavi/FloodDetection/blob/main/FloodDetection_Davide_Vettore.ipynb): Notebook documenting the training of segmentation models.
+- [requirements.txt](https://github.com/ywdavi/FloodDetection/blob/main/requirements.txt): Required libraries for the dashboard.
+- [FloodDetection_Davide_Vettore.ipynb](https://github.com/ywdavi/FloodDetection/blob/main/FloodDetection_Davide_Vettore.ipynb): Training of the segmentation models.
 
 **_References:_**
 - [FloodNet Dataset Repository](https://github.com/BinaLab/FloodNet-Supervised_v1.0)
