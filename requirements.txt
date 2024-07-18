@@ -1,0 +1,17 @@
+efficientnet-pytorch==0.7.1
+numpy==1.24.3
+oauthlib==3.2.2
+opencv-python-headless==4.9.0.80
+openpyxl==3.0.10
+segmentation-models-pytorch==0.3.3
+streamlit==1.32.0
+streamlit-image-comparison==0.0.4
+style==1.1.0
+torch==2.3.0
+torchvision==0.18.0
+matplotlib==3.8.0
+matplotlib-inline== 0.1.6
+pandas==2.1.4
+pillow==10.2.0
+
+
