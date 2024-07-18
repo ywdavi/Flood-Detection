@@ -19,3 +19,5 @@ The **FloodNet Dataset** provides high-resolution UAS imagery with detailed sema
 **_References:_**
 - [FloodNet Dataset Repository](https://github.com/BinaLab/FloodNet-Supervised_v1.0)
 - [FloodNet Paper](https://ieeexplore.ieee.org/document/9460988)
+
+_P.S. the .pth models are trained on resnet34 backbone to not exceed 100MB github limit_
