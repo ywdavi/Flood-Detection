@@ -9,17 +9,7 @@ This repository contains my project on semantic segmentation using the **[FloodN
 - Develop a **Streamlit dashboard** for real-time flood damage detection and visualization.
   
 ## Dataset
-The **FloodNet Dataset** provides high-resolution UAS imagery with detailed semantic annotations of damages collected after **Hurricane Harvey**. The dataset contains 2343 images split into training (60%), validation (20%), and test (20%) sets. The segmentation labels cover 10 classes:
-- Background
-- Building Flooded
-- Building Non-Flooded
-- Road Flooded
-- Road Non-Flooded
-- Water
-- Tree
-- Vehicle
-- Pool
-- Grass
+The **FloodNet Dataset** provides high-resolution UAS imagery with detailed semantic annotations of damages collected after **Hurricane Harvey**. The dataset contains 2343 images split into training (60%), validation (20%), and test (20%) sets.
 
 ## Key Steps
 
@@ -48,7 +38,22 @@ The **FloodNet Dataset** provides high-resolution UAS imagery with detailed sema
 ## Dashboard
 A **Streamlit** dashboard was developed to visualize the results in real time. Users can upload images and select between different segmentation models to view the predicted flood damage. The dashboard also includes tools to adjust transparency and overlay segmentations on the original images.
 
-<img width="1656" alt="Screenshot 2024-10-18 at 22 02 16" src="https://github.com/user-attachments/assets/2817f235-b06b-4c30-bac5-7026d7abaec3">
-<img width="1609" alt="Screenshot 2024-10-18 at 22 05 06" src="https://github.com/user-attachments/assets/8043a3d1-12a6-46bd-9169-82c0cd295109">
+<div align="center">
+	<img width="50%" alt="Screenshot 2024-10-18 at 22 02 16" src="https://github.com/user-attachments/assets/2817f235-b06b-4c30-bac5-7026d7abaec3">
+  <img width="50%" alt="Screenshot 2024-10-18 at 22 05 06" src="https://github.com/user-attachments/assets/8043a3d1-12a6-46bd-9169-82c0cd295109">
+</div>
+
+## Content
+- [6397.jpg](https://github.com/ywdavi/FloodDetection/blob/main/6397.jpg) and [7606.jpg](https://github.com/ywdavi/FloodDetection/blob/main/7606.jpg): Placeholder images. 
+- [FPN](https://github.com/ywdavi/FloodDetection/blob/main/FPN) and [Unet](https://github.com/ywdavi/FloodDetection/blob/main/Unet): Segmentation models (.pth).
+- [FloodDetection.py](https://github.com/ywdavi/FloodDetection/blob/main/FloodDetection.py): Streamlit dashboard.
+- [requirements.txt](https://github.com/ywdavi/FloodDetection/blob/main/requirements.txt): Required libraries for the dashboard.
+- [FloodDetection_Davide_Vettore.ipynb](https://github.com/ywdavi/FloodDetection/blob/main/FloodDetection_Davide_Vettore.ipynb): Training of the segmentation models.
+
+## References
+- [FloodNet Dataset Repository](https://github.com/BinaLab/FloodNet-Supervised_v1.0)
+- [FloodNet Paper](https://ieeexplore.ieee.org/document/9460988)
+
+_P.S. these models are trained on resnet34 backbone to not exceed 100MB github limit_"
 
 
