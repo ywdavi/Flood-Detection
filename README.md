@@ -1,23 +1,58 @@
-# **Semantic Segmentation on the FloodNet Dataset**
-## *Advanced Computational Techniques for Big Imaging and Signal Data*
+# Flood Detection Semantic Segmentation
 
-**Name and Surname:** Davide Vettore  
-**ID:** 868855  
-**Date:** July 15, 2024
+## Description
+This repository contains my project on semantic segmentation using the **FloodNet Dataset**, which was presented as part of my Bachelor's work. The goal of the project is to build a robust model capable of detecting flood damages from aerial images captured after natural disasters. The trained model is integrated into a real-time **Streamlit** dashboard to assist in visualizing flood damage in various areas.
 
-> _Natural disasters are becoming more frequent and severe, threatening human health and infrastructure. Accurate and timely information is crucial for effective disaster management. Small unmanned aerial systems (UAS) with affordable sensors can quickly collect thousands of images, even in difficult-to-reach areas, which helps in rapid response and recovery. However, analyzing these large datasets to extract useful information remains a significant challenge._
+## Objectives
+- Perform semantic segmentation on aerial images from the **FloodNet Dataset** to detect different types of damage.
+- Train various state-of-the-art models such as **U-Net** and **PSP-Net** for segmentation.
+- Develop a **Streamlit dashboard** for real-time flood damage detection and visualization.
+  
+## Dataset
+The **FloodNet Dataset** provides high-resolution UAS imagery with detailed semantic annotations of damages collected after **Hurricane Harvey**. The dataset contains 2343 images split into training (60%), validation (20%), and test (20%) sets. The segmentation labels cover 10 classes:
+- Background
+- Building Flooded
+- Building Non-Flooded
+- Road Flooded
+- Road Non-Flooded
+- Water
+- Tree
+- Vehicle
+- Pool
+- Grass
 
-The **FloodNet Dataset** provides high-resolution UAS imagery with detailed semantic annotations of damages collected after **Hurricane Harvey**. The whole dataset has 2343 images, divided into training (60%), validation (20%), and test (20%) sets. The semantic segmentation labels include: Background, Building Flooded, Building Non-Flooded, Road Flooded, Road Non-Flooded, Water, Tree, Vehicle, Pool and Grass. The **goal** is to create and train a strong model for semantic segmentation. This model will be used in a dashboard to detect flood damages in real-time.
+## Key Steps
 
-**_Content:_**
-- [6397.jpg](https://github.com/ywdavi/FloodDetection/blob/main/6397.jpg) and [7606.jpg](https://github.com/ywdavi/FloodDetection/blob/main/7606.jpg): Placeholder images. 
-- [FPN](https://github.com/ywdavi/FloodDetection/blob/main/FPN) and [Unet](https://github.com/ywdavi/FloodDetection/blob/main/Unet): Segmentation models (`.pth`).
-- [FloodDetection.py](https://github.com/ywdavi/FloodDetection/blob/main/FloodDetection.py): Streamlit dashboard.
-- [requirements.txt](https://github.com/ywdavi/FloodDetection/blob/main/requirements.txt): Required libraries for the dashboard.
-- [FloodDetection_Davide_Vettore.ipynb](https://github.com/ywdavi/FloodDetection/blob/main/FloodDetection_Davide_Vettore.ipynb): Training of the segmentation models.
+### Data Preprocessing:
+- Resized images and masks to 256x256 pixels and normalized RGB values between 0 and 1.
+- Applied data augmentation techniques including horizontal and vertical flipping and random rotations to prevent overfitting.
 
-**_References:_**
-- [FloodNet Dataset Repository](https://github.com/BinaLab/FloodNet-Supervised_v1.0)
-- [FloodNet Paper](https://ieeexplore.ieee.org/document/9460988)
+### Model Training:
+- Trained **U-Net** and **PSP-Net** models with **ResNet101** backbones for segmentation tasks.
+- Employed **Dice Loss** to optimize the models, ensuring better overlap between predicted segmentation masks and ground truth.
 
-_P.S. these models are trained on resnet34 backbone to not exceed 100MB github limit_
+### Model Evaluation:
+- Both models were trained for 25 epochs and evaluated using metrics such as **Mean IoU**, **Mean Dice Score**, and **Accuracy**.
+- **U-Net** achieved better segmentation results with an IoU of 57.57% and a Dice Score of 67.75%, while **PSP-Net** had a slightly lower performance.
+
+## Results
+- The **U-Net** model provided better overall performance, especially in segmenting flooded areas.
+- Class-wise analysis showed challenges in detecting smaller objects like pools and vehicles, but flooded buildings and roads were identified correctly.
+  
+**Evaluation Metrics:**
+| Model   | Mean IoU | Mean Dice | Mean Accuracy |
+|---------|----------|-----------|---------------|
+| U-Net   | 57.57%   | 67.75%    | 72.67%        |
+| PSP-Net | 57.57%   | 62.86%    | 69.24%        |
+
+## Dashboard
+A **Streamlit** dashboard was developed to visualize the results in real time. Users can upload images and select between different segmentation models to view the predicted flood damage. The dashboard also includes tools to adjust transparency and overlay segmentations on the original images.
+
+<img width="1656" alt="Screenshot 2024-10-18 at 22 02 16" src="https://github.com/user-attachments/assets/2817f235-b06b-4c30-bac5-7026d7abaec3">
+
+![Dashboard Demo Image 2](demo_image2.png)
+
+## How to Run
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/flood-detection-segmentation.git
