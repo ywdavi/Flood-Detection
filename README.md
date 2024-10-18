@@ -39,8 +39,8 @@ The **FloodNet Dataset** provides high-resolution UAS imagery with detailed sema
 A **Streamlit** dashboard was developed to visualize the results in real time. Users can upload images and select between different segmentation models to view the predicted flood damage. The dashboard also includes tools to adjust transparency and overlay segmentations on the original images.
 
 <div align="center">
-	<img width="20%" alt="Screenshot 2024-10-18 at 22 02 16" src="https://github.com/user-attachments/assets/2817f235-b06b-4c30-bac5-7026d7abaec3">
-  <img width="20%" alt="Screenshot 2024-10-18 at 22 05 06" src="https://github.com/user-attachments/assets/8043a3d1-12a6-46bd-9169-82c0cd295109">
+	<img width="40%" alt="Screenshot 2024-10-18 at 22 02 16" src="https://github.com/user-attachments/assets/2817f235-b06b-4c30-bac5-7026d7abaec3">
+  <img width="40%" alt="Screenshot 2024-10-18 at 22 05 06" src="https://github.com/user-attachments/assets/8043a3d1-12a6-46bd-9169-82c0cd295109">
 </div>
 
 ## Content
