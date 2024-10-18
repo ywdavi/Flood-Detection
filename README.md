@@ -1,7 +1,7 @@
 # Flood Detection Semantic Segmentation
 
 ## Description
-This repository contains my project on semantic segmentation using the **FloodNet Dataset**, which was presented as part of my Bachelor's work. The goal of the project is to build a robust model capable of detecting flood damages from aerial images captured after natural disasters. The trained model is integrated into a real-time **Streamlit** dashboard to assist in visualizing flood damage in various areas.
+This repository contains my project on semantic segmentation using the **FloodNet Dataset**, which was completed in the second semester of my Master's program. The goal of the project is to build a robust model capable of detecting flood damages from aerial images captured after natural disasters. The trained model is integrated into a real-time **Streamlit** dashboard to assist in visualizing flood damage in various areas.
 
 ## Objectives
 - Perform semantic segmentation on aerial images from the **FloodNet Dataset** to detect different types of damage.
@@ -49,10 +49,6 @@ The **FloodNet Dataset** provides high-resolution UAS imagery with detailed sema
 A **Streamlit** dashboard was developed to visualize the results in real time. Users can upload images and select between different segmentation models to view the predicted flood damage. The dashboard also includes tools to adjust transparency and overlay segmentations on the original images.
 
 <img width="1656" alt="Screenshot 2024-10-18 at 22 02 16" src="https://github.com/user-attachments/assets/2817f235-b06b-4c30-bac5-7026d7abaec3">
+<img width="1609" alt="Screenshot 2024-10-18 at 22 05 06" src="https://github.com/user-attachments/assets/8043a3d1-12a6-46bd-9169-82c0cd295109">
 
-![Dashboard Demo Image 2](demo_image2.png)
 
-## How to Run
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/flood-detection-segmentation.git
