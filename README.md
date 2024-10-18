@@ -1,7 +1,7 @@
 # Flood Detection Semantic Segmentation
 
 ## Description
-This repository contains my project on semantic segmentation using the **FloodNet Dataset**, which was completed in the second semester of my Master's program. The goal of the project is to build a robust model capable of detecting flood damages from aerial images captured after natural disasters. The trained model is integrated into a real-time **Streamlit** dashboard to assist in visualizing flood damage in various areas.
+This repository contains my project on semantic segmentation using the (**FloodNet Dataset**)[https://ieeexplore.ieee.org/document/9460988], which was completed in the second semester of my Master's program. The goal of the project is to build a robust model capable of detecting flood damages from aerial images captured after natural disasters. The trained model is integrated into a real-time **Streamlit** dashboard to assist in visualizing flood damage in various areas.
 
 ## Objectives
 - Perform semantic segmentation on aerial images from the **FloodNet Dataset** to detect different types of damage.
