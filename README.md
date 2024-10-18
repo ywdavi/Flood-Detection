@@ -40,7 +40,8 @@ A **Streamlit** dashboard was developed to visualize the results in real time. U
 
 <div align="center">
 	<img width="40%" alt="Screenshot 2024-10-18 at 22 02 16" src="https://github.com/user-attachments/assets/2817f235-b06b-4c30-bac5-7026d7abaec3">
-  <img width="40%" alt="Screenshot 2024-10-18 at 22 05 06" src="https://github.com/user-attachments/assets/8043a3d1-12a6-46bd-9169-82c0cd295109">
+	<img width="20%" alt="Screenshot 2024-10-18 at 22 15 17" src="https://github.com/user-attachments/assets/cd45f3d7-fd93-41c0-b87e-c0dd754d5cca">
+	<img width="40%" alt="Screenshot 2024-10-18 at 22 05 06" src="https://github.com/user-attachments/assets/8043a3d1-12a6-46bd-9169-82c0cd295109">
 </div>
 
 ## Content
